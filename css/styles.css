@@ -3,7 +3,7 @@
   --color-white: #fefcfc;
   --color-primary-dark: #21514f;
   --color-primary: #03ab69;
-  --color-primary-light: #c8e0d8;
+  --color-primary-light: #68cda5;
   --color-primary-light-2: #e6f7f0; }
 
 *,
@@ -14,10 +14,11 @@
   box-sizing: border-box; }
 
 body {
-  width: 100%; }
+  width: 100%;
+  background-color: var(--color-white); }
 
 .main-container {
-  max-width: 180rem;
+  max-width: 160rem;
   margin: 0 auto; }
 
 html {
@@ -28,8 +29,14 @@ body {
   line-height: 1;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  color: var(--color-black);
-  background-color: var(--color-white); }
+  color: var(--color-black); }
+
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1.3; }
+  .heading-primary em {
+    color: var(--color-primary-light); }
 
 .list {
   list-style: none; }
@@ -46,6 +53,8 @@ body {
   text-shadow: var(--color-primary-light) 0 0 3.4rem; }
 
 .btn:link, .btn:visited {
+  display: inline-block;
+  text-align: center;
   padding: 1.4rem 2.4rem;
   background-color: var(--color-primary-dark);
   color: var(--color-primary-light-2);
@@ -56,8 +65,17 @@ body {
   background-color: var(--color-white);
   box-shadow: 0 0 0 0.4rem var(--color-primary-dark) inset; }
 
+.btn--big {
+  padding: 1.4rem 4.6rem !important; }
+
 .icon {
-  font-size: 1.8rem; }
+  font-size: 2.4rem; }
+
+.margin-bottom-med {
+  margin-bottom: 3.4rem; }
+
+.margin-bottom-big {
+  margin-bottom: 6.4rem; }
 
 .nav-bar {
   padding: 3.4rem 6.4rem;
@@ -71,12 +89,12 @@ body {
     gap: 0.8rem;
     color: var(--color-primary-light) !important;
     cursor: pointer; }
+    .nav-bar-logo-icon {
+      font-size: 2.4rem; }
     .nav-bar-logo-text {
       font-size: 2.4rem;
       font-weight: 600;
       color: var(--color-primary-dark) !important; }
-    .nav-bar-logo-icon {
-      font-size: 2.4rem; }
   .nav-bar-main {
     width: 68%;
     display: flex;
@@ -134,3 +152,22 @@ body {
     display: block; }
   .nav-open .nav-bar-btn-icon[name="menu"] {
     display: none; } }
+
+.hero-section {
+  padding: 0 6.2rem;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  height: 85vh;
+  align-items: center; }
+
+.rating-container {
+  display: flex;
+  align-items: center; }
+  .rating-container-text {
+    font-size: 1.2rem; }
+  .rating-container-icons {
+    margin-right: 1.8rem; }
+  .rating-container-icon {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 0.2rem; }
