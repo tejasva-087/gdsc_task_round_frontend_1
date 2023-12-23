@@ -1,11 +1,7 @@
-// HTML Elements
-// Navigation
-const navButtonEl = document.querySelector(".nav-bar-btn");
+const navBtnEl = document.querySelector(".nav-bar-btn");
 const headerEl = document.querySelector(".nav-bar");
 
-// Functionality
-// Navigation
-navButtonEl.addEventListener("click", function () {
-  headerEl.classList.add(".nav-open");
-  console.log(headerEl.classList);
+navBtnEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+  console.log("clicked");
 });

@@ -53,15 +53,28 @@
       display: none;
     }
   }
+
+  // 500
+  @media (max-width: 31.25em) {
+    padding: 2.4rem 3.2rem;
+  }
+
+  // 320
+  @media (max-width: 20em) {
+    padding: 1.6rem 0.6rem;
+  }
 }
 
+// 1200px
 @media (max-width: 75em) {
   .nav-bar {
     &-btn {
       display: block;
+      z-index: 1;
     }
 
     &-main {
+      z-index: 0;
       position: absolute;
       top: 0;
       left: 0;
@@ -69,6 +82,7 @@
       height: 100vh;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       gap: 3.2rem;
       font-size: 2.4rem;
       transition: all 0.5s;

@@ -96,11 +96,19 @@ body {
       font-size: 3.4rem; }
     .nav-bar-btn-icon[name="close"] {
       display: none; }
+  @media (max-width: 31.25em) {
+    .nav-bar {
+      padding: 2.4rem 3.2rem; } }
+  @media (max-width: 20em) {
+    .nav-bar {
+      padding: 1.6rem 0.6rem; } }
 
 @media (max-width: 75em) {
   .nav-bar-btn {
-    display: block; }
+    display: block;
+    z-index: 1; }
   .nav-bar-main {
+    z-index: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -108,6 +116,7 @@ body {
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 3.2rem;
     font-size: 2.4rem;
     transition: all 0.5s;
