@@ -6,6 +6,15 @@
   align-items: center;
   justify-items: center;
   column-gap: 6.4rem;
+
+  @media (max-width: 62.5em) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+  }
+  @media (max-width: 31.25em) {
+    padding: 0 0.4rem 1.4rem;
+  }
 }
 
 .rating-container {
@@ -23,5 +32,8 @@
     color: var(--color-white);
     background-color: var(--color-primary);
     padding: 0.2rem;
+  }
+  @media (max-width: 62.5em) {
+    justify-content: center;
   }
 }

@@ -24,6 +24,12 @@ body {
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 31.25em) {
+    html {
+      font-size: 43.75%; } }
 
 body {
   font-size: 1.6rem;
@@ -33,19 +39,31 @@ body {
   color: var(--color-black); }
 
 .heading-primary {
-  font-size: 4.8rem;
+  font-size: 4.6rem;
   font-weight: 500;
   line-height: 1.3; }
   .heading-primary em {
     color: var(--color-primary-light); }
+  @media (max-width: 75em) {
+    .heading-primary {
+      font-size: 4rem; } }
+  @media (max-width: 62.5em) {
+    .heading-primary {
+      font-size: 5.4rem; } }
 
 .heading-tertiary {
   font-size: 2.4rem;
   font-weight: 600; }
+  @media (max-width: 43.75em) {
+    .heading-tertiary {
+      font-size: 1.6rem; } }
 
 .light-text {
   font-size: 1.4rem;
   font-weight: 300; }
+  @media (max-width: 43.75em) {
+    .light-text {
+      font-size: 1.2rem; } }
 
 .list {
   list-style: none; }
@@ -77,6 +95,10 @@ body {
 .btn--big {
   padding: 1.4rem 4.6rem !important; }
 
+@media (max-width: 62.5em) {
+  .btn {
+    font-size: 2rem; } }
+
 .icon {
   font-size: 2.4rem; }
   .icon--small {
@@ -90,6 +112,9 @@ body {
 
 .margin-bottom-big {
   margin-bottom: 6.4rem; }
+  @media (max-width: 62.5em) {
+    .margin-bottom-big {
+      margin-bottom: 3.4rem; } }
 
 .nav-bar {
   padding: 3.4rem 6.4rem;
@@ -201,6 +226,9 @@ body {
     width: 45%;
     font-style: italic;
     display: none; }
+  @media (max-width: 43.75em) {
+    .accordian-quote {
+      font-size: 1.2rem; } }
 
 .accordian-input-radio:checked + .accordian-box {
   width: 60%; }
@@ -219,6 +247,14 @@ body {
   align-items: center;
   justify-items: center;
   column-gap: 6.4rem; }
+  @media (max-width: 62.5em) {
+    .hero-section {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      text-align: center; } }
+  @media (max-width: 31.25em) {
+    .hero-section {
+      padding: 0 0.4rem 1.4rem; } }
 
 .rating-container {
   display: flex;
@@ -231,3 +267,6 @@ body {
     color: var(--color-white);
     background-color: var(--color-primary);
     padding: 0.2rem; }
+  @media (max-width: 62.5em) {
+    .rating-container {
+      justify-content: center; } }

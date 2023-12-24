@@ -1,19 +1,19 @@
 // Abstracts
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/function";
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/function';
 
 // Base
-@import "base/base";
-@import "base/typography";
-@import "base/utility";
-@import "base/animation";
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utility';
+@import 'base/animation';
 
 // Components
-@import "component/navigation";
+@import 'component/navigation';
 
 // Layouts
-@import "layouts/accordian";
+@import 'layouts/accordian';
 
 // Pages
-@import "pages/home";
+@import 'pages/home';

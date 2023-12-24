@@ -39,6 +39,10 @@
   &--big {
     padding: 1.4rem 4.6rem !important;
   }
+
+  @media (max-width: 62.5em) {
+    font-size: 2rem;
+  }
 }
 
 .icon {
@@ -59,4 +63,8 @@
 
 .margin-bottom-big {
   margin-bottom: 6.4rem;
+
+  @media (max-width: 62.5em) {
+    margin-bottom: 3.4rem;
+  }
 }
