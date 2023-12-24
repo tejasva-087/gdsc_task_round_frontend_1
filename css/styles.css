@@ -210,7 +210,8 @@ body {
     transition: all 0.5s;
     display: flex;
     align-items: end;
-    justify-content: space-around; }
+    justify-content: space-around;
+    cursor: pointer; }
     .accordian .accordian-box--1 {
       background-image: linear-gradient(transparent, var(--color-black-opac)), url(/assets/img/person-1-small.jpg); }
     .accordian .accordian-box--2 {
@@ -228,7 +229,9 @@ body {
     display: none; }
   @media (max-width: 43.75em) {
     .accordian-quote {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+    .accordian .accordian-box {
+      transition: all 3s; } }
 
 .accordian-input-radio:checked + .accordian-box {
   width: 60%; }
