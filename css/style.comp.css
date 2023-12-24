@@ -231,7 +231,7 @@ body {
     .accordian-quote {
       font-size: 1.2rem; }
     .accordian .accordian-box {
-      transition: all 3s; } }
+      transition: all 8s; } }
 
 .accordian-input-radio:checked + .accordian-box {
   width: 60%; }
