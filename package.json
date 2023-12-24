@@ -7,8 +7,10 @@
     "dev-server": "live-server",
     "watch:scss": "node-sass scss/styles.scss css/styles.css -w",
     "start": "npm-run-all --parallel dev-server watch:scss",
-    "compile:scss": "node-sass scss/styles.scss css/styles.css",
-    "": ""
+    "compile:scss": "node-sass scss/styles.scss css/style.compile.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.compile.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/styles.css",
+    "build:css": "npm-run-all compile:scss prefix:css compress:css"
   },
   "author": "Tejasva Khandelwal",
   "license": "ISC",
