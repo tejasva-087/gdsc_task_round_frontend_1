@@ -1,9 +1,11 @@
 .hero-section {
-  padding: 0 6.2rem;
+  padding: 0 6.2rem 1.4rem;
   display: grid;
   grid-template-columns: 30% 1fr;
   height: 85vh;
   align-items: center;
+  justify-items: center;
+  column-gap: 6.4rem;
 }
 
 .rating-container {
