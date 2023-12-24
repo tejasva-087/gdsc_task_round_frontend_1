@@ -213,11 +213,11 @@ body {
     justify-content: space-around;
     cursor: pointer; }
     .accordian .accordian-box--1 {
-      background-image: linear-gradient(transparent, var(--color-black-opac)), url(/assets/img/person-1-small.jpg); }
+      background-image: linear-gradient(transparent, var(--color-black-opac)), url(/assets/img/person-1-small.webp); }
     .accordian .accordian-box--2 {
-      background-image: linear-gradient(transparent, var(--color-black-opac)), url(/assets/img/person-2-small.jpg); }
+      background-image: linear-gradient(transparent, var(--color-black-opac)), url(/assets/img/person-2-small.webp); }
     .accordian .accordian-box--3 {
-      background-image: linear-gradient(transparent, var(--color-black-opac)), url(/assets/img/person-3-small.jpg); }
+      background-image: linear-gradient(transparent, var(--color-black-opac)), url(/assets/img/person-3-small.webp); }
     .accordian .accordian-box-text {
       display: flex;
       justify-content: space-between; }
