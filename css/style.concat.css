@@ -237,7 +237,7 @@ body {
         width: 100%; } }
   @media (max-width: 43.75em) {
     .accordian-quote {
-      font-size: 1.2rem; }
+      font-size: 1.6rem; }
     .accordian .accordian-box {
       transition: all 0.3s; } }
   @media (max-width: 31.25em) {
@@ -258,7 +258,7 @@ body {
 @media (max-width: 62.5em) {
   .accordian-input-radio:checked + .accordian-box,
   .accordian-input-radio:not(:checked) + .accordian-box {
-    width: 60%; }
+    width: 70%; }
   .accordian-input-radio:not(:checked)
 + .accordian-box
 .accordian-box-text

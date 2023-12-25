@@ -65,7 +65,7 @@
   // 700
   @media (max-width: 43.75em) {
     &-quote {
-      font-size: 1.2rem;
+      font-size: 1.6rem;
     }
     .accordian-box {
       transition: all 0.3s;
@@ -94,7 +94,7 @@
 @media (max-width: 62.5em) {
   .accordian-input-radio:checked + .accordian-box,
   .accordian-input-radio:not(:checked) + .accordian-box {
-    width: 60%;
+    width: 70%;
   }
 
   .accordian-input-radio:not(:checked)
