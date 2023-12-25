@@ -258,7 +258,7 @@ body {
 @media (max-width: 62.5em) {
   .accordian-input-radio:checked + .accordian-box,
   .accordian-input-radio:not(:checked) + .accordian-box {
-    width: 70%; }
+    width: 85%; }
   .accordian-input-radio:not(:checked)
 + .accordian-box
 .accordian-box-text
