@@ -50,13 +50,33 @@
     display: none;
   }
 
+  // 1000
+  @media (max-width: 62.5em) {
+    gap: 0.8rem;
+    .accordian-box-text {
+      flex-direction: column;
+    }
+    .accordian-quote {
+      margin-top: 1.2rem;
+      width: 100%;
+    }
+  }
+
+  // 700
   @media (max-width: 43.75em) {
     &-quote {
       font-size: 1.2rem;
     }
     .accordian-box {
-      transition: all 8s;
+      transition: all 0.3s;
     }
+  }
+
+  // 500
+  @media (max-width: 31.25em) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
   }
 }
 
@@ -69,4 +89,18 @@
   .accordian-box-text
   .accordian-quote {
   display: block;
+}
+
+@media (max-width: 62.5em) {
+  .accordian-input-radio:checked + .accordian-box,
+  .accordian-input-radio:not(:checked) + .accordian-box {
+    width: 60%;
+  }
+
+  .accordian-input-radio:not(:checked)
+    + .accordian-box
+    .accordian-box-text
+    .accordian-quote {
+    display: block;
+  }
 }

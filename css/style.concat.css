@@ -227,11 +227,24 @@ body {
     width: 45%;
     font-style: italic;
     display: none; }
+  @media (max-width: 62.5em) {
+    .accordian {
+      gap: 0.8rem; }
+      .accordian .accordian-box-text {
+        flex-direction: column; }
+      .accordian .accordian-quote {
+        margin-top: 1.2rem;
+        width: 100%; } }
   @media (max-width: 43.75em) {
     .accordian-quote {
       font-size: 1.2rem; }
     .accordian .accordian-box {
-      transition: all 8s; } }
+      transition: all 0.3s; } }
+  @media (max-width: 31.25em) {
+    .accordian {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.4rem; } }
 
 .accordian-input-radio:checked + .accordian-box {
   width: 60%; }
@@ -241,6 +254,16 @@ body {
 .accordian-box-text
 .accordian-quote {
   display: block; }
+
+@media (max-width: 62.5em) {
+  .accordian-input-radio:checked + .accordian-box,
+  .accordian-input-radio:not(:checked) + .accordian-box {
+    width: 60%; }
+  .accordian-input-radio:not(:checked)
++ .accordian-box
+.accordian-box-text
+.accordian-quote {
+    display: block; } }
 
 .hero-section {
   padding: 0 6.2rem 1.4rem;

@@ -8,6 +8,7 @@
   justify-items: center;
   column-gap: 6.4rem;
 
+  // 1000px
   @media (max-width: 62.5em) {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
